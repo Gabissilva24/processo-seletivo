@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+</head>
+<body>
+    <main id="form_container">
+        <div id="form_header">
+            <h1 id="fomr_title">
+                Criar conta
+            </h1>
+        </div>
+
+        <form action="" id="form">
+            <div id="input_container">
+                <div class="input-box">
+                    <label for="name" class="form-label">Nome completo:</label>
+                    <div class="input-field">
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Digite seu nome" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="phone" class="form-label">Telefone:</label>
+                    <div class="input-field">
+                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="Digite telefone com DDD" required>
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="birthdate" class="form-label">Nascimento:</label>
+                    <div class="input-field">
+                        <input type="text" id="birthdate" name="birthdate" class="form-control" placeholder="dd/mm/aaaa">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="email" class="form-label">E-mail:</label>
+                    <div class="input-field">
+                        <input type="email" id="email" name="email" class="form-control" placeholder="exemplo@hotmail.com" required>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="password" class="form-label">Senha:</label>
+                    <div class="input-field">
+                        <input type="password" id="password" name="password" class="form-control" placeholder="********" required>
+                        <i class="fa-solid fa-eye-slash password-icon"></i>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="confirm_password" class="form-label">Confirmar senha:</label>
+                    <div class="input-field">
+                        <input type="password" id="confirm_password" name="confirm_password" class="form-control" placeholder="********" required>
+                        <i class="fa-solid fa-eye-slash password-icon"></i>
+                    </div>
+                </div>
+
+                <div class="radio-container">
+                    <label class="form-label">Gênero</label>
+                    <div id="gender_inputs">
+                        <div class="radio-box">
+                            <input type="radio" id="female" name="gender" class="form-control" value="female">
+                            <label for="famale" class="form-label">Feminino</label>
+                        </div>
+
+                        <div class="radio-box">
+                            <input type="radio" id="male" name="gender" class="form-control" value="male">
+                            <label for="male" class="form-label">Masculino</label>
+                        </div>
+
+                        <div class="radio-box">
+                            <input type="radio" id="other" name="gender" class="form-control" value="other">
+                            <label for="other" class="form-label">Outro</label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <button type="submit" class="btn-default">
+                <i class="fa-solid fa-check"></i>
+                Criar conta
+            </button>
+        </form>
+    </main>
+
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
