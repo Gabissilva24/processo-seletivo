@@ -162,7 +162,7 @@ input:-webkit-autofill {
         gap: 38px;
     }
 
-    .forn-control[type="date"] {
+    .forn-control[type="text"] {
         background-color: #fff;
     }
 } 
